@@ -12,8 +12,8 @@ export default function Home() {
   const searchBarInputRef = useRef(null);
   const router = useRouter();
 
-  const search = (e) => {
-    e.preventDefault();
+  const search = (event) => {
+    event.preventDefault();
     const searchTerm = searchBarInputRef.current.value;
 
     if (!searchTerm) return;
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <Head>
-        <title>Google Search</title>
+        <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
